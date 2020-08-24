@@ -7,7 +7,7 @@
         <div class="content">
           <h2>{{ item.title }}</h2>
           <h5>{{ item.subtitle }}</h5>
-          <h6 class="date">{{ item.from }} — {{ item.to }} {{if item.grade and item.grade != "" and item.grade != nil and item.grade != blank}} <b>Grade</b>: {{item.grade}} {{endif}}</h6>
+          <h6 class="date">{{ item.from }} — {{ item.to }} {{if item.grade}} <b>Grade</b>: {{item.grade}} {{endif}}</h6>
           <p>{{ item.description | markdownify}}</p>
         </div>
       </div>
